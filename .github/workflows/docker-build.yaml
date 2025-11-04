@@ -24,7 +24,7 @@ jobs:
 
       - name: Build and Push Docker image
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/flask-webapp:latest
+          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/flask-webapp
           echo "Building and pushing $IMAGE_NAME"
           docker build -f webapp01/Dockerfile -t $IMAGE_NAME:latest -t $IMAGE_NAME:${{ github.sha }} webapp01
           docker push $IMAGE_NAME:latest
