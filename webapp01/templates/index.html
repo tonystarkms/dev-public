@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Azure Local AKS App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌏 Welcome to Azure Local AKS App</h1>
+        <p><b>Current Time:</b> {{ now }}</p>
+        <p><b>Weather in Hong Kong:</b> {{ temp }}°C, Humidity {{ humidity }}%</p>
+
+        <h2>✨ Fun Facts About Azure Local AKS App</h2>
+        <ul>
+            {% for fact in facts %}
+                <li>{{ fact }}</li>
+            {% endfor %}
+        </ul>
+
+        <footer>
+            <p>Made with ❤️ using Flask</p>
+        </footer>
+    </div>
+</body>
+</html>
