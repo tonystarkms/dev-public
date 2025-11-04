@@ -27,4 +27,5 @@ jobs:
           IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/flask-webapp:latest
           echo "Building and pushing $IMAGE_NAME"
           docker build -f webapp01/Dockerfile -t $IMAGE_NAME:latest -t $IMAGE_NAME:${{ github.sha }} webapp01
-          docker push $IMAGE_NAME
+          docker push $IMAGE_NAME:latest
+          docker push $IMAGE_NAME:${{ github.sha }}
