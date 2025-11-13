@@ -19,7 +19,7 @@ def home():
 
     # Fun facts about Azure Local, AKS, and CI/CD
     facts = [
-        "Azure Local lets you run AKS clusters on-premises, managed through Azure Arc.",
+        "Azure Local x lets you run AKS clusters on-premises, managed through Azure Arc. xx",
         "AKS supports GitOps with Flux, so your cluster state is driven directly from a Git repo.",
         "CI/CD pipelines with GitHub Actions or Azure Pipelines can build, test, and deploy containers to AKS automatically.",
         "AKS integrates with Azure Container Registry (ACR) for secure image storage and fast pulls.",
